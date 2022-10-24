@@ -84,7 +84,7 @@ class Concert:
 
 concert = Concert
 concert.visitors_cnt = 1000
-Concert.visitors_count()
+concert.visitors_count()
 
 # 6
 @dataclasses.dataclass
