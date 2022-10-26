@@ -2,11 +2,11 @@
 class FibonacciNumbers:
     fib1 = 0
     fib2 = 1
+    count = 0
 
     def __init__(self, quantity):
         self.qty = quantity
         self.number = 0
-        self.count = 0
 
     def __iter__(self):
         return self
