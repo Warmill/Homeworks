@@ -6,16 +6,20 @@ class FibonacciNumbers:
     def __init__(self, quantity):
         self.qty = quantity
         self.number = 0
+        self.count = 0
 
     def __iter__(self):
         return self
 
     def __next__(self):
-        if self.qty > 0:
+        if self.count == 0:
+            self.count += 1
+            return 0
+        if self.count < self.qty:
             self.number = self.fib1 + self.fib2
             self.fib1 = self.fib2
             self.fib2 = self.number
-            self.qty -= 1
+            self.count += 1
             return self.number
         else:
             raise StopIteration
@@ -31,12 +35,17 @@ def FibonacciGen(quantity):
     number = 0
     fib1 = 0
     fib2 = 1
-    while quantity > 0:
-        number = fib1 + fib2
-        fib1 = fib2
-        fib2 = number
-        quantity -= 1
-        yield number
+    count = 0
+    while count < quantity:
+        if count == 0:
+            count +=1
+            yield number
+        else:
+            number = fib1 + fib2
+            fib1 = fib2
+            fib2 = number
+            count += 1
+            yield number
 
 
 FibGen = FibonacciGen(10)
@@ -45,7 +54,8 @@ for elem in FibGen:
 
 # 3
 print('\n')
-g = (number*number for number in range(10))
+z={0, 1, 2, 3, 4 , 5 , 6, 7, 8, 9, 10}
+g = (number*number for number in z)
 for elem in g:
     print(elem)
 
