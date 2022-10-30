@@ -14,7 +14,8 @@ class FibonacciNumbers:
     def __next__(self):
         if self.count == 0:
             self.count += 1
-            return 0
+            print('0')
+            print('1')
         if self.count < self.qty:
             self.number = self.fib1 + self.fib2
             self.fib1 = self.fib2
@@ -39,7 +40,8 @@ def FibonacciGen(quantity):
     while count < quantity:
         if count == 0:
             count +=1
-            yield number
+            print('0')
+            print('1')
         else:
             number = fib1 + fib2
             fib1 = fib2
