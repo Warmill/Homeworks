@@ -25,7 +25,7 @@ def show_table():
 
 def update_table():
     for emp in employees:
-        Employee.update_rate(emp,emp.rate)
+        Employee.update_rate(emp,emp.rate+Decimal(5))
 
 
 if __name__ == "__main__":
