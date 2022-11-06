@@ -39,17 +39,19 @@ trans("logs.txt", "logs.csv")
 
 
 # 3
+def jsnn(filename1,filenam2,codeword):
+    
+    z=0
+    with open(filename2, "r") as fr:
+            for line in fr:
+                if codeword in line:
+                    m=line
+                    z+=1
 
-word= "OPENED"
-z=0
-with open("logs.csv", "r") as fr:
-        for line in fr:
-            if word in line:
-                m=line
-                z+=1
+    ltm= "".join(m.split(",")[:-1])
+    tojs={"file.txt":{"count":z,"last_time_opened":ltm}}
 
-ltm= "".join(m.split(",")[:-1])
-tojs={"file.txt":{"count":z,"last_time_opened":ltm}}
-
-with open("logs.json",'w') as fjs:
-    json.dump(tojs,fjs, indent=4)
+    with open(filename1,'w') as fjs:
+        json.dump(tojs,fjs, indent=4)
+        
+jsnn("logs.json","logs.csv","OPENED")
