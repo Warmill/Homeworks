@@ -39,7 +39,7 @@ trans("logs.txt", "logs.csv")
 
 
 # 3
-def jsnn(filename1,filenam2,codeword):
+def jsnn(filename1,filename2,codeword):
     
     z=0
     with open(filename2, "r") as fr:
