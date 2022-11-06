@@ -24,6 +24,7 @@ class Control:
     def run():
 
         global defin
+        kk=0
         print()
         nums1 = (1, 2, 3)
         classiz = ("Plants", "Employees", "Saloons")
@@ -41,24 +42,26 @@ class Control:
             defit = Employee
             defin = 'employee'
             deftotake = {"id", "name", "email"}
+            kk=1
         elif classz == 3:
             defit = Saloon
             defin = 'saloon'
             deftotake = {"id", "name", "location"}
 
         if classif == 1:
-            if classz == 1 or classz == 3:
-                name = input(f"Type name of new {defin} ")
-                location = input(f"Type location of new {defin} ")
-                defr = defit(name, location)
-                defr.save()
-            elif classz == 2:
+            if kk = 1:
                 name = input(f"Type name of new {defin} ")
                 email = input(f"Type email of new {defin} ")
                 plant_id = input(f"Type id of plant of new {defin} ")
                 saloon_name = input(f"Type name of saloon of new {defin} ")
                 defr = defit(name, email, plant_id, saloon_name)
                 defr.save()
+            else:
+                name = input(f"Type name of new {defin} ")
+                location = input(f"Type location of new {defin} ")
+                defr = defit(name, location)
+                defr.save()
+                
         elif classif == 2:
             defs = defit.get_all()
             for defg in defs:
