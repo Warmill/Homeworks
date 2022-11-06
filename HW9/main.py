@@ -53,4 +53,3 @@ tojs={"file.txt":{"count":z,"last_time_opened":ltm}}
 
 with open("logs.json",'w') as fjs:
     json.dump(tojs,fjs, indent=4)
-print(z)
