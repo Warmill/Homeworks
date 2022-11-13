@@ -1,0 +1,4 @@
+ERROR:root:NameError
+INFO:root:Program start working!
+WARNING:root:Started to work on risky code
+ERROR:root:NameError

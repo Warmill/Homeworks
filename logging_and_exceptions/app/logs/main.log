@@ -1,0 +1,73 @@
+07-Nov-22 20:42:08 - INFO - Menu printed!!!
+07-Nov-22 20:42:16 - WARNING - [Errno 2] No such file or directory: 'database/plants.json'
+07-Nov-22 20:42:16 - WARNING - Folder database don't exist
+07-Nov-22 20:42:16 - INFO - File created
+07-Nov-22 20:42:16 - INFO - Menu printed!!!
+07-Nov-22 20:42:23 - ERROR - Plant not found!
+07-Nov-22 20:42:23 - INFO - Menu printed!!!
+07-Nov-22 20:43:27 - INFO - Menu printed!!!
+07-Nov-22 20:43:39 - INFO - Menu printed!!!
+07-Nov-22 20:44:00 - INFO - Menu printed!!!
+07-Nov-22 20:44:11 - INFO - Menu printed!!!
+07-Nov-22 20:44:14 - WARNING - [Errno 2] No such file or directory: 'database/employees.json'
+07-Nov-22 20:44:14 - INFO - File created
+07-Nov-22 20:44:14 - INFO - Menu printed!!!
+07-Nov-22 20:49:04 - INFO - Menu printed!!!
+07-Nov-22 20:49:18 - ERROR - This email already exist!
+07-Nov-22 20:49:18 - INFO - Menu printed!!!
+07-Nov-22 20:50:56 - INFO - Menu printed!!!
+07-Nov-22 20:51:01 - ERROR - This email already exist!test
+07-Nov-22 20:51:01 - INFO - Menu printed!!!
+07-Nov-22 20:55:58 - INFO - Menu printed!!!
+07-Nov-22 20:56:04 - ERROR - This email already exist! Email: test
+07-Nov-22 20:56:04 - INFO - Menu printed!!!
+07-Nov-22 20:56:19 - ERROR - Not a valid email address! Email: test21
+07-Nov-22 20:56:19 - INFO - Menu printed!!!
+07-Nov-22 20:56:37 - ERROR - Not a valid email address! Email: test.com@lol
+07-Nov-22 20:56:37 - INFO - Menu printed!!!
+07-Nov-22 20:57:01 - INFO - Menu printed!!!
+07-Nov-22 20:57:07 - INFO - Menu printed!!!
+07-Nov-22 21:01:24 - INFO - Menu printed!!!
+13-Nov-22 11:52:11 - INFO - Menu printed!!!
+13-Nov-22 11:52:14 - ERROR - invalid literal for int() with base 10: 'a'
+13-Nov-22 11:52:14 - INFO - Menu printed!!!
+13-Nov-22 11:52:20 - INFO - Menu printed!!!
+13-Nov-22 11:52:26 - INFO - Menu printed!!!
+13-Nov-22 11:52:35 - ERROR - invalid literal for int() with base 10: 'a'
+13-Nov-22 11:52:35 - INFO - Menu printed!!!
+13-Nov-22 11:54:40 - INFO - Menu printed!!!
+13-Nov-22 11:55:07 - INFO - Menu printed!!!
+13-Nov-22 11:55:33 - INFO - Menu printed!!!
+13-Nov-22 11:55:37 - ERROR - invalid literal for int() with base 10: 'a'
+13-Nov-22 11:55:37 - INFO - Menu printed!!!
+13-Nov-22 11:56:59 - INFO - Menu printed!!!
+13-Nov-22 11:58:20 - INFO - Menu printed!!!
+13-Nov-22 11:58:24 - ERROR - 'NoneType' object is not subscriptable
+13-Nov-22 11:58:24 - INFO - Menu printed!!!
+13-Nov-22 11:59:23 - INFO - Menu printed!!!
+13-Nov-22 11:59:31 - INFO - Menu printed!!!
+13-Nov-22 12:01:55 - INFO - Menu printed!!!
+13-Nov-22 12:02:04 - INFO - Menu printed!!!
+13-Nov-22 12:02:19 - ERROR - invalid literal for int() with base 10: 'a'
+13-Nov-22 12:02:19 - INFO - Menu printed!!!
+13-Nov-22 12:03:36 - INFO - Menu printed!!!
+13-Nov-22 12:03:40 - ERROR - invalid literal for int() with base 10: 'ff'
+13-Nov-22 12:03:40 - INFO - Menu printed!!!
+13-Nov-22 12:03:55 - INFO - Menu printed!!!
+13-Nov-22 12:04:00 - INFO - Menu printed!!!
+13-Nov-22 12:04:39 - INFO - Menu printed!!!
+13-Nov-22 12:04:43 - INFO - Menu printed!!!
+13-Nov-22 12:06:00 - INFO - Menu printed!!!
+13-Nov-22 12:06:05 - INFO - Menu printed!!!
+13-Nov-22 12:06:55 - INFO - Menu printed!!!
+13-Nov-22 12:07:00 - INFO - Menu printed!!!
+13-Nov-22 12:07:09 - ERROR - 'NoneType' object is not subscriptable
+13-Nov-22 12:07:09 - INFO - Menu printed!!!
+13-Nov-22 12:09:03 - INFO - Menu printed!!!
+13-Nov-22 12:09:06 - INFO - Menu printed!!!
+13-Nov-22 12:21:05 - INFO - Menu printed!!!
+13-Nov-22 12:21:09 - INFO - Menu printed!!!
+13-Nov-22 12:21:18 - ERROR - Not a valid email address! Email: gg
+13-Nov-22 12:21:18 - INFO - Menu printed!!!
+13-Nov-22 12:53:48 - INFO - Menu printed!!!
+13-Nov-22 12:53:59 - INFO - Menu printed!!!
