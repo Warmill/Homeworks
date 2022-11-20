@@ -20,18 +20,24 @@ print(notebook.Battery)
 
 # 2
 class Guitar:
-    def __init__(self):
-        SteelString = GuitarString('This is Steel string')
-        self.Gstring= [SteelString.String_Type]
+    def __init__(self,name,String_type):
+        self.name = name
+        self.String_type = String_type
 
-
-class GuitarString:
-    def __init__(self, String_Type):
+    def new_guitar(self):
+        return(f'this is {self.name} guitar with {self.String_type} string')
+class GuitarInput:
+    def __init__(self,name, String_Type):
+        self.name = name
         self.String_Type = String_Type
+        self.guitar = Guitar(name,String_Type)
+    def show_info(self):
+        return self.guitar.new_guitar()
 
 
-String1 = Guitar()
-print('\n',String1.Gstring)
+String1 = GuitarInput('Jordan','Metal')
+print('\n', String1.show_info())
+
 
 # 3
 class Calc:
@@ -45,7 +51,7 @@ class Calc:
 
 
 summer = Calc(1, 2, 3)
-print('\n','summ of 3 numbers is:', summer.summ())
+print('\n', 'summ of 3 numbers is:', summer.summ())
 
 
 # 4
@@ -70,21 +76,17 @@ print(past2.ingridients)
 
 # 5
 class Concert:
-    max_visitors_num = 50
-
-    def __init__(self, visitors_cnt):
-        self.visitors_cnt = visitors_cnt
-
-    @classmethod
-    def visitors_count(cls):
-        if Concert.visitors_cnt > Concert.max_visitors_num:
-            Concert.visitors_cnt = Concert.max_visitors_num
-            print('\n',f'Max visitors count is {Concert.visitors_cnt}')
+    def __setattr__(self, key, value):
+        if key == "visitors_count" and value > Concert.max_visitors_num:
+            Concert.visitors_count = Concert.max_visitors_num
+            print('\n', f'Max visitors count is {Concert.visitors_count}')
 
 
-concert = Concert
-concert.visitors_cnt = 1000
-Concert.visitors_count()
+Concert.max_visitors_num = 50
+concert = Concert()
+concert.visitors_count = 1000
+print(concert.visitors_count)
+
 
 # 6
 @dataclasses.dataclass
@@ -121,32 +123,35 @@ class AdressBook:
         self.birthday = birthday
         self.age = age
 
-    def person_info(self):
+    def str(self):
         print('\n', f'Persons key: {self.key}, name:{self.name}, number:{self.phone_number}, '
                     f'adress: {self.adress},mail:{self.email},birthday:{self.birthday},age:{self.age}')
 
 
 Some_person = AdressBook(3, 'Person', '985816211', 'personal street', 'someperson@email.git', '01/01/2122', -100)
-Some_person.person_info()
+Some_person.str()
 
 
 # 9
-Someone= {
-    'name': 'John',
-    'age': 36,
-    'country': 'USA'
-}
+class Person:
+    name = 'John'
+    age = 36
+    country = 'USA'
 
-print('\n',Someone)
-Someone['age']=22
-print(Someone)
 
-#10
+someone = Person
+print(someone.name, ' ', someone.age, ' ', someone.country)
+someone.age = 22
+print(someone.name, ' ', someone.age, ' ', someone.country)
+
+
+# 10
 @dataclasses.dataclass
 class Student:
     id: int
     name: str
 
-SomeStud=Student(777,'Frank')
+
+SomeStud = Student(777, 'Frank')
 SomeStud.email = 'Studlife@stud.com'
-print('\n',SomeStud,SomeStud.email)
+print('\n', SomeStud, SomeStud.email)
