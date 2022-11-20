@@ -26,6 +26,7 @@ class Guitar:
 
     def new_guitar(self):
         return(f'this is {self.name} guitar with {self.String_type} string')
+    
 class GuitarInput:
     def __init__(self,name, String_Type):
         self.name = name
