@@ -1,0 +1,2 @@
+PyJWT==2.6.0
+itsdangerous==2.1.2
