@@ -1,13 +1,6 @@
 import os
 import argparse
 
-def directory(raw_path):
-    if not os.path.isdir(raw_path):
-        raise argparse.ArgumentTypeError('"{}" is not an existing directory'.format(raw_path))
-    return os.path.abspath(raw_path)
-
-
-
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', help='count all files', action='store_true')
 parser.add_argument('-d', help='change directory',nargs='?', default=os.path.curdir)
