@@ -9,12 +9,10 @@ args=parser.parse_args()
 
 z = os.listdir(path=args.d)
 
-if args.c:
+if args.l:
+    print(z[-1])
+elif args.c and args.d:
     cnt = 0
     for el in z:
         if el: cnt += 1
     print(cnt)
-elif args.d:
-    print(z)
-elif args.l:
-    print(z[-1])
