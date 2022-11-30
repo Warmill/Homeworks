@@ -2,7 +2,7 @@ import argparse
 
 def my_func():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', help='Show you count of letters', action='store_true')
+    parser.add_argument('-f', help='Show you count of words', action='store_true')
     parser.add_argument('file', help='whats your file?')
     args=parser.parse_args()
 
