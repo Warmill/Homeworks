@@ -50,12 +50,17 @@ print("\n#3 \n")
 def logged(func):
     @wraps(func)
     def decor_func(*args,**kwargs):
+        
+        with open("HW_14/logs.txt", "a") as file:
+            file.write(
+                f"{datetime.datetime.now()} args {args}, kwargs {kwargs} res = {func(*args, **kwargs )}\n"
+            )
         return func(*args,**kwargs)
     return decor_func
 
 @logged
 def func(*args):
-    return 3 + len(args)
+    return 3 + len(args)+len(kwargs)
 
 
 func(4, 4, 4)
