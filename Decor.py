@@ -51,7 +51,7 @@ def logged(func):
     @wraps(func)
     def decor_func(*args,**kwargs):
         
-        with open("HW_14/logs.txt", "a") as file:
+        with open("logs.txt", "a") as file:
             file.write(
                 f"{datetime.datetime.now()} args {args}, kwargs {kwargs} res = {func(*args, **kwargs )}\n"
             )
