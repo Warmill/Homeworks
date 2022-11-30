@@ -8,7 +8,7 @@ class Human:
         self.name = name
         self.surname = surname
         self.age = age
-        self.birth_date = datetime.datetime.now() - datetime.timedelta(days=365*age)
+        self.birth_date = birth_date
 
 class HumanSerializer:
     def serialize(self, hum, format):
