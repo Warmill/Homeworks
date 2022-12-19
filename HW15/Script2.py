@@ -11,7 +11,7 @@ z = os.listdir(path=args.d)
 
 if args.l:
     print(z[-1])
-elif args.c and args.d:
+elif args.c:
     cnt = 0
     for el in z:
         if el: cnt += 1
